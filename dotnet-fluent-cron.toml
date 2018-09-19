@@ -1,0 +1,33 @@
+title = "Fluent API for cron expressions in .NET"
+tags = ["fluent-api", "dotnet", "cron"]
+links = [
+    "https://github.com/HangfireIO/Cronos/"
+  , "https://github.com/fluentscheduler/FluentScheduler"
+  , "https://crontab-generator.org/"
+]
+definition_of_done = "Can generate valid cron expressions as *string*s with an intuitive fluent API in a class library targeting *netstandard2.0*."
+description = """Expose a fluent API for generating valid cron expressions.
+
+Example:
+
+```csharp
+using System;
+using FluentCron; // or whatever the name is
+
+namespace Example
+{
+    public static class Program
+    {
+        public static void Main(string[] args)
+        {
+            string tenAmWeekdays = Cron.OnWeekdays()
+                                       .At24HourTimeUtc(hours: 15, minutes: 00);
+
+            Console.WriteLine(tenAmWeekdays); // => "00 15 * * 1-5"
+        }
+    }
+}
+```"""
+
+[meta]
+created_at = 2018-09-19T01:00:00Z

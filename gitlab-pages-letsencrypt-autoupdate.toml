@@ -1,0 +1,16 @@
+title = "GitLab Pages + Let's Encrypt Auto-Updating Service"
+tags = ["gitlab", "lets-encrypt", "automation"]
+links = [
+    "https://github.com/rolodato/gitlab-letsencrypt"
+  , "https://gitlab.com/TomasHubelbauer/gitlab-pages-custom-domain-lets-encrypt-info"
+  , "https://docs.gitlab.com/ce/api/pages_domains.html"
+  , "https://community.letsencrypt.org/t/google-domains-dns-api-support-not-google-cloud-dns/55480/7"
+]
+definition_of_done = "Service will generate new certs and update GitLab via API"
+description = """Generating and updating certificates is a tedious process.
+
+Automating this process ensures that certs stay up-to-date.
+"""
+
+[meta]
+created_at = 2018-09-19T12:00:00Z
